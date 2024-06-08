@@ -2,7 +2,7 @@
 
 本项目源于[zhheo](https://github.com/zhheo)的[TimePlus](https://github.com/zhheo/TimePlus)，遵循MIT协议二次分发修改。
 
-![timeplus](info\timeplus.webp)
+![timeplus](info/timeplus.webp)
 
 
 
