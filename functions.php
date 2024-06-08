@@ -6,10 +6,10 @@ function themeConfig($form)
     echo '<font color=red>' . $message . '</font>';
     die;
   }
-  $data = json_decode(file_get_contents('https://plog.zhheo.com/usr/themes/NewTime/releases.json'), true);
+  $data = json_decode(file_get_contents('https://plog.mysticstars.cn/usr/themes/TimeX/releases.json'), true);
   $message = $data['tag_name'];
   //当前版本号
-  $selfmessage = '2.10';
+  $selfmessage = '1.0';
   if ($selfmessage == $message) {
     echo  'TimeX&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp当前版本：' . 'v' . $selfmessage . "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . '最新版本:' . 'v' . $message;
   } else  if ($selfmessage > $message) {
@@ -36,9 +36,9 @@ function themeConfig($form)
   //大logo
   $Biglogo = new Typecho_Widget_Helper_Form_Element_Text('Biglogo', NULL, '欢迎使用TimeX，这里填写你的介绍。', _t('关于-详细介绍'), _t('底栏展开后的详细介绍，可以使用html标签'));
   $form->addInput($Biglogo);
-  $zmki_ys = new Typecho_Widget_Helper_Form_Element_Text('zmki_ys', NULL, '', _t('缩略图-图片处理规则名称-(优化选项,选填)'), _t('需要带自定义分隔符;使用oss图片处理生成小缩略图可优化页面打开速度; 使用帮助:https://www.zmki.cn/4956.html'));
+  $zmki_ys = new Typecho_Widget_Helper_Form_Element_Text('zmki_ys', NULL, '', _t('缩略图-图片处理规则名称-(优化选项,选填)'), _t('需要带自定义分隔符;使用oss图片处理生成小缩略图可优化页面打开速度; 使用帮助:https://github.com/zhheo/TimePlus/wiki/Time%E7%9B%B8%E5%86%8C%E5%9B%BE%E5%86%8C%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-%E7%BC%A9%E7%95%A5%E5%9B%BE%E5%8E%8B%E7%BC%A9%E5%92%8Cwebp%E8%87%AA%E9%80%82%E5%BA%94#%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E4%B9%8B-%E7%BC%A9%E7%95%A5%E5%9B%BE%E4%BC%98%E5%8C%96'));
   $form->addInput($zmki_ys);
-  $zmki_sy = new Typecho_Widget_Helper_Form_Element_Text('zmki_sy', NULL, '', _t('图片版权水印-图片处理规则名称-(优化选项,选填)'), _t('需要带自定义分隔符;此处可填写oss水印规则名称，默认对全部图片生效; 使用帮助:https://www.zmki.cn/4956.html'));
+  $zmki_sy = new Typecho_Widget_Helper_Form_Element_Text('zmki_sy', NULL, '', _t('图片版权水印-图片处理规则名称-(优化选项,选填)'), _t('需要带自定义分隔符;此处可填写oss水印规则名称，默认对全部图片生效; 使用帮助:https://github.com/zhheo/TimePlus/wiki/%E9%98%BF%E9%87%8C%E4%BA%91oss%E3%80%81%E5%8F%88%E6%8B%8D%E4%BA%91%E5%82%A8%E5%AD%98%E7%AD%89%E5%82%A8%E5%AD%98%E6%A1%B6%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E4%BB%8B%E7%BB%8D-%E2%80%93%E9%85%8D%E5%90%88-Time%E6%97%B6%E5%85%89%E7%9B%B8%E5%86%8C%E4%BD%BF%E7%94%A8#%E4%BA%8C%E4%BC%98%E5%8C%96%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83%E6%B0%B4%E5%8D%B0'));
   $form->addInput($zmki_sy);
   $xxhome = new Typecho_Widget_Helper_Form_Element_Text('xxhome', NULL, '', _t('Home'), _t('填写你的主页链接 http(s)://'));
   $form->addInput($xxhome);
