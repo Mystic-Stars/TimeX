@@ -1,14 +1,8 @@
 # TimeX For Typecho
 
-![](/info/timeplus.webp)
+本项目源于[zhheo](https://github.com/zhheo)的[TimePlus](https://github.com/zhheo/TimePlus)，遵循MIT协议二次分发修改。
 
-原作者两年都没有维护这个主题了，跑路到Wordpress上了。我个人很喜欢这个主题想要更快速的迭代优化，所以打算继续维护这个主题。基于原作者的[Time主题](https://github.com/wclk/time)更新全新的TimePlus。
-
-起名“TimePlus”的寓意是期望能将这个主题继续延续下去。
-
-主题基于原Time主题可能有个人设计偏好，如果你不喜欢这些改动，可以尝试原主题。
-
-# 以下内容来自TimePlus
+## 以下内容来自[TimePlus](https://github.com/zhheo/TimePlus)
 
 > ## 使用文档
 >
