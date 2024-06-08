@@ -2,9 +2,9 @@
 
 本项目源于[zhheo](https://github.com/zhheo)的[TimePlus](https://github.com/zhheo/TimePlus)，遵循MIT协议二次分发修改。
 
+![timeplus](info\timeplus.webp)
 
 
-![TimeX](https://bu.dusays.com/2024/06/08/66645c2fe1973.png)
 
 ## 以下内容来自[TimePlus](https://github.com/zhheo/TimePlus)
 
